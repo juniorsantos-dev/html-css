@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas com nomes</title>
+
+    <style>
+        h1{ 
+            border-radius: 20px;
+            text-align: center;
+            font-size: 40px;
+            background-color: chartreuse;
+            color: blue;
+            padding: 10px;
+
+        }
+
+        th.titulo{
+            text-align: center;
+            font-size: 20px;
+            border: solid 1px black;
+            background-color: rgb(253, 24, 24);
+        }
+
+        td.rosa{
+            background-color: rgb(236, 35, 75);
+        }
+
+        td.azul{
+            background-color: rgb(41, 91, 253);
+        }
+
+        td.nomes{
+            background-color: rgb(190, 230, 150);
+        }
+
+        th.total{
+            border: solid 1px rgb(0, 0, 0);
+            background-color: rgb(119, 219, 4);
+            color: rgb(15, 15, 15);
+        }
+        table{
+        
+           padding: 5px;
+           border-collapse: collapse;
+
+
+        }
+
+        tr{
+           width: 20px;
+           background-color: rgb(143, 150, 143);
+
+        }
+
+        td{
+            font-size: 15px;
+            text-align: center;
+            border: solid 1px black;
+            padding:5px ;
+            
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Tabelas com nomes </h1>
+    <table>
+        <tr>
+            <th class="titulo">Grupo</th>
+            <th class="titulo">Nomes</th>
+            <th  class="titulo" colspan="3">Filmes</th>
+           
+        </tr>
+
+        <tr>
+            <td class="rosa" rowspan="3">Mulheres</td>
+            
+            <td class="nomes">Ana santos</td>
+            <td>vingadores</td>
+            <td>hulk </td>
+            <td>dr. estranho</td>
+           
+        </tr>
+
+        <tr>
+            <td class="nomes">Beatriz</td>
+            <td> thor</td>
+            <td> toy story</td>
+            <td>pica pau</td>
+            
+        </tr>
+
+        <tr>
+            <td class="nomes">julia</td>
+            <td> dexter</td>
+            <td> chuk</td>
+            <td> a freira</td>
+            
+        </tr>
+
+        <tr>
+            <td class="azul" rowspan="3">Homens</td>
+            <td class="nomes">cleber</td>
+            <td> rambo</td>
+            <td>thor</td>
+            <td> batman</td>
+        </tr>
+        
+        <tr>
+            <td class="nomes">gustavo</td>
+            <td> invocaçaõ do mal</td>
+            <td> a morte do demonio</td>
+            <td> exorcista</td>
+        </tr>
+
+       <tr>
+            <td class="nomes">michel</td>
+            <td> rambo</td>
+            <td> homem de ferro</td>
+            <td> sinais dos e.t</td>
+        </tr>
+
+        <tr >
+            <th class=" total" colspan="4"> Total</th>
+            <th  class=" total" colspan="2"> 18</th>
+             </tr>
+
+
+    </table>
+    
+</body>
+</html>

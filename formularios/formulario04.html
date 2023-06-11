@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 04</title>
+
+    <style>
+        fieldset{
+            background-color: rgb(205, 235, 235);
+            border-radius: 20px;
+        }
+
+        div{
+            
+            font-size:  30px;
+            text-align: center;
+           
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de formularios</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+       <fieldset> <!-- Agrupamento de campos-->
+           <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome">
+           
+           </p>
+           
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemael" autocomplete="email">
+            </p>
+       </fieldset>
+
+       <div>
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="apagar">
+
+    </div>
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>

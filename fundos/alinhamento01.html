@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamento vertical</title>
+
+                    <!-- Quando voce vai centralizar verticalmente
+                    voce tem que ter 2 div, uma conteiner e uma conteudo
+                para adicionar atributos diferenter, para que elas possam
+                trabalhar de forma harmonica-->
+
+    <style>
+
+        #conteiner{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;            
+            border-radius: 10px;
+            position: relative;
+            padding: 10px;
+            height: 97vh;
+            background-color: rgb(197, 25, 231);
+
+        }
+
+        #conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            width: 200px;
+            height:400px;
+            background-color: chartreuse;
+
+            left: 50%;
+            top: 30%;
+
+            transform: translate(-50%, -50%);}
+
+            #conteudo>p{
+                background-color: aqua;
+                padding: 10px;
+               margin: 20px;
+               width: 100px;
+               padding-left: 50px;
+
+            }
+
+    </style>
+
+</head>
+<body>
+
+<section id="conteiner">
+    <article id="conteudo">
+        <p>Como criar o home de ferro</p>
+
+    </article>
+</section>
+    
+</body>
+</html>

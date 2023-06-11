@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe 01</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient( to bottom, rgb(20, 20, 241), rgb(65, 65, 252), rgb(129, 129, 248), rgb(176, 176, 238));
+            background-repeat: no-repeat;
+            
+           
+                  }
+                  
+
+        iframe#tela{
+         width: 95vh;
+         height: 400px;
+         border: solid 1px black;
+         display: block;
+         margin: auto;
+         
+        
+        }
+
+          li{
+            font-size: 20px;
+            text-align: center;
+            background-color: blue;
+        }
+
+        h1{
+            color: white;
+          
+        }
+
+        a{
+            color: white;
+            text-decoration: none; /* Text decoretion serve para decorar o texto, exmplo do none serve para retirar o anderline*/
+           }
+
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Previsão do tempo para os proximos dias</h1>
+    <P>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Sint reiciendis quas aspernatur dignissimos, molestias
+         in voluptas tempore deleniti. Animi, quis fugit veritatis veli
+         t laudantium nostrum doloremque repellendus. Earum, error architecto?
+    </P>
+    <br>
+    <ul>
+
+        <!-- ja nas opcoes de hiperlinks onde utilizo o nome dos estados, quando é clicado no nome do estado ele atualiza no iframe de baixo, pois estou
+        usando uma ID com o nome de "TELA " onde vai buscar dentro do HREF meu TARGET com o nome da ID "TELA", Sendo assim toda vez que eu 
+    clicar no iframe do estado ele altera -->
+        <li><a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/364/riogrande-rs" target="tela">Rio grande do sul </a></li>
+        <li><a href="https://www.tempo.com/santa-catarina-l501369.htm"  target="tela">Santa catarina</a></li>
+        <li><a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/321/riodejaneiro-rj"  target="tela">Rio de janeiro</a></li>
+        <li><a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/88/goiania-go"  target="tela">Goias</a></li>
+       </ul>
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Totam assumenda error quam dolorem alias eaque, consectetur
+          quibusdam rem dolor sit maiores itaque, nostrum labore voluptatem 
+          animi fuga quos aliquam dicta.
+       </p>
+
+       <!-- O exemplo a baixo do iframe, estou utilizando o link de um site de previsao do tempo
+    onde e atualizado em tempo real, -->
+
+       <iframe id="tela" name="tela" src="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/350/bentogoncalves-rs" ></iframe>
+
+       <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Totam assumenda error quam dolorem alias eaque, consectetur
+         quibusdam rem dolor sit maiores itaque, nostrum labore voluptatem 
+         animi fuga quos aliquam dicta.
+       </p>
+    
+</body>
+</html>
+
+
+
+

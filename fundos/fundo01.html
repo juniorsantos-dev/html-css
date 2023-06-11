@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundp</title>
+
+    <style>
+          /*para adicionar uma imagem, no fundo da paina asta adicionar o comando
+          backgrgound-image*/
+
+        body{
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+
+    div.quadrado{
+        display: inline-block/* forma o displei lateralmente*/;
+        border: 3px solid black /* forma as bordas*/;
+        border-radius: 15px; /*borda aredondada*/
+        width: 300px; /*altura das bordas*/
+        height: 300px; /*largura das bordas*/
+        background-color: rgb(219, 219, 228); /* sempre vai ser a cor do fundo*/
+
+    }
+
+    div#q1{
+        background-color: rgb(110, 243, 243);
+
+    }
+
+    div#q2{
+        background-image: linear-gradient(to bottom, rgb(29, 29, 255), rgb(142, 132, 226))   }
+
+    div#q3{
+        background-image: url('imagens/pattern001.png');
+
+    }
+
+</style>
+
+
+</head>
+
+<body>
+    <!-- div e uma referencia-->    <!-- id e o caminho do style-->
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+    
+</body>
+</html>

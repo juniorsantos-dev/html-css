@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando tabela base</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 10px;
+            font-weight: bolder;
+            padding: 6px;
+        }
+
+        th,td{
+            border: solid 1px black;
+            text-align: center;
+        }
+
+        col.cnome{
+            background-color: rgb(187, 125, 245) ;
+        }
+
+        /*Usar o overflow para que nao transborde, nao role para o lado
+        porem tem que colocar dentro de uma div 
+        div: 'conteiner'    style- conteiner{overflow}*/
+
+
+    </style>
+</head>
+<body>
+
+    <h1> Exercicios de tabela</h1>
+
+    <table>
+        <colgroup> 
+            <col  class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofi">
+
+        </colgroup>
+
+    <caption> Cadastro</caption>
+
+  <tr>
+    <th scope="col"> Nome</th>
+    <th scope="col">Sexo</th>
+    <th scope="col">Idade</th>
+    <th scope="col">Profissão</th>
+</tr>
+
+<tr>
+    <td>Ana maria</td>
+    <td>F</td>
+    <td>20</td>
+    <td>jornalista</td>
+</tr>
+
+<tr>
+    <td>joana</td>
+    <td>F</td>
+    <td>22</td>
+    <td>psicologa</td>
+</tr>
+
+<tr>
+    <td>nathalia</td>
+    <td>F</td>
+    <td>26</td>
+    <td>analista</td>
+</tr>
+
+<tr>
+    <td>sabrina</td>
+    <td>F</td>
+    <td>25</td>
+    <td>veterinaria</td>
+</tr>
+
+<tr>
+    <td>carol</td>
+    <td>F</td>
+    <td>23</td>
+    <td>infermeira</td>
+</tr>
+
+</table>
+    
+</body>
+</html>
