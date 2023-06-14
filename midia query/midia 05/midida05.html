@@ -9,10 +9,10 @@
 </head>
 <body>
     <header>
-            <h1>Meu saite</h1>
-            <i class="material-icons">menu</i>
+            <h1>Midia Query</h1>
+            <i id="burger" class="material-icons" onclick="clicMenu()">menu</i>
             
-            <menu>
+            <menu id="itens">
                 <ul>
                     <li> <a href=""> opção 1</a></li>
                     <li> <a href=""> opção 2</a></li>
@@ -51,6 +51,17 @@
 
         </article>
     </main>
+
+    <script>
+       function clicMenu() {
+    var itens = document.getElementById("itens");
+    if (itens.style.display == 'block') {
+        itens.style.display = "none";
+    } else {
+        itens.style.display = 'block';
+    }
+}
+    </script>
 
     
 </body>
